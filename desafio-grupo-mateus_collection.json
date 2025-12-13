@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Desafio Grupo Mateus - Product API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["products"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"TV\",\n  \"description\": \"Smart TV\",\n  \"price\": 2500.00,\n  \"stock\": 10\n}"
+        }
+      }
+    },
+    {
+      "name": "Find All Products",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/products"
+      }
+    },
+    {
+      "name": "Find Product By ID",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/products/1"
+      }
+    },
+    {
+      "name": "Update Product",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": "http://localhost:8080/products/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"TV 4K\",\n  \"description\": \"Smart TV 4K\",\n  \"price\": 3200.00,\n  \"stock\": 5\n}"
+        }
+      }
+    },
+    {
+      "name": "Delete Product",
+      "request": {
+        "method": "DELETE",
+        "url": "http://localhost:8080/products/1"
+      }
+    }
+  ]
+}
