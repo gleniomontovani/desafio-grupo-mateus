@@ -21,6 +21,7 @@ Este projeto implementa uma API REST para gerenciamento de produtos, desenvolvid
 - SLF4J (para fazer observabilidade basica)
 - YAML Configuration
 - Postman Collection
+- Swagger
 
 ---
 
