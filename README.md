@@ -92,8 +92,10 @@ src/main/java
 #### Executar a aplicação
 
 ```bash
-mvn clean install
-mvn spring-boot:run
+> git clone https://github.com/gleniomontovani/desafio-grupo-mateus.git
+> cd desafio-grupo-mateus
+> ./mvnw clean install
+> ./mvnw spring-boot:run
 ```
 
 A aplicação estará disponível em:
@@ -123,7 +125,11 @@ Exemplo de resposta de erro:
 }
 ```
 
-### 📬 Postman Collection
+### 📌 Como testar a aplicação:
+
+Após fazer o clone do projeto para sua maquina e rodar a aplicação, você pode testar das seguintes formas:
+
+#### 📬 Postman Collection
 Uma collection do Postman está disponível na raiz do projeto com o nome:
 
 ```pgsql
@@ -133,9 +139,9 @@ desafio-grupo-mateus_collection.json
 Importe no Postman para testar todos os endpoints.
 
 
-### 📌 Testando pelo Swagger
+#### 🎯 Swagger
 
-Após subir a aplicação você também pode acessar o swagger pelo link abaixo e realizar os testes:
+Acesse o swagger pelo link abaixo e realizar os testes:
 
 [API Swagger - Desafio Grupo Mateus](http://localhost:8080/swagger-ui.html)
 
