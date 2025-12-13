@@ -1,6 +1,6 @@
 ## 🛒 Desafio Técnico – API de Produtos (Grupo Mateus)
 
-Este projeto implementa uma API REST para gerenciamento de produtos, desenvolvida em Java 21 com Spring Boot, seguindo Arquitetura Hexagonal (Ports & Adapters), DAO + Factory Pattern, testes unitários completos e boas práticas de design.
+Este projeto implementa uma API REST para gerenciamento de produtos, desenvolvida em Java 21 com Spring Boot, seguindo Arquitetura Hexagonal (Ports & Adapters), DAO + Factory Pattern, testes unitários completos, observabilidade basica como log na aplicação e boas práticas de design.
 
 ---
 
@@ -18,6 +18,7 @@ Este projeto implementa uma API REST para gerenciamento de produtos, desenvolvid
 - Mockito
 - MockMvc
 - Maven
+- SLF4J (para fazer observabilidade basica)
 - YAML Configuration
 - Postman Collection
 
@@ -54,6 +55,7 @@ src/main/java
 - Domínio puro
 - Não depende de Spring
 - Contém entidades, ports, use cases e regras de negócio
+- Contém observabilidade basica no serviço.
 
 #### Application
 - Camada de entrada e saída
@@ -129,6 +131,14 @@ desafio-grupo-mateus_collection.json
 ```
 
 Importe no Postman para testar todos os endpoints.
+
+
+### 📌 Testando pelo Swagger
+
+Após subir a aplicação você também pode acessar o swagger pelo link abaixo e realizar os testes:
+
+[API Swagger - Desafio Grupo Mateus](http://localhost:8080/swagger-ui.html)
+
 
 
 ### 👨‍💻 Autor
