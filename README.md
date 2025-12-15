@@ -146,6 +146,15 @@ Acesse o swagger pelo link abaixo e realizar os testes:
 
 [API Swagger - Desafio Grupo Mateus](http://localhost:8080/swagger-ui.html)
 
+### 🔐 Configurações de Acesso ao Banco H2
+Utilize os seguintes dados na tela de login do H2 Console:
+
+| Campo            | Valor                   |
+| ---------------- | ----------------------- |
+| **JDBC URL**     | `jdbc:h2:mem:productdb` |
+| **User Name**    | `sa`                    |
+| **Password**     | *(em branco)*           |
+| **Driver Class** | `org.h2.Driver`         |
 
 
 ### 👨‍💻 Autor
