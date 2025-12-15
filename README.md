@@ -78,8 +78,8 @@ src/main/java
 - Implementação baseada em DAO Pattern
 - Criação dos DAOs via Factory Pattern
 - Banco H2 em memória
-- Implementação atual usando ConcurrentHashMap
-- Preparado para troca futura por JDBC ou outro provider
+- Implementação atual pode também usar ConcurrentHashMap (armazenamento em memória - fake repository)
+- Preparado para troca futura por JPA ou outro provider
 
 ---
 
