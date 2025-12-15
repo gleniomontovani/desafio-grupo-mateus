@@ -10,13 +10,13 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProductDAOImplTest {
+class ProductDaoInMemoryTest {
 
     private ProductDAO dao;
 
     @BeforeEach
     void setUp() {
-        dao = new ProductDAOImpl();
+        dao = new ProductDaoInMemory();
     }
 
     private Product productWithoutId() {

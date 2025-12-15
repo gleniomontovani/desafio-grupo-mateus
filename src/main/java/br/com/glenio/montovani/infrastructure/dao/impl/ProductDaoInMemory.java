@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-public class ProductDAOImpl implements ProductDAO {
+public class ProductDaoInMemory implements ProductDAO {
 
     private final Map<Long, Product> database = new ConcurrentHashMap<>();
     private final AtomicLong sequence = new AtomicLong(1);
