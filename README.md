@@ -146,7 +146,19 @@ Acesse o swagger pelo link abaixo e realizar os testes:
 
 [API Swagger - Desafio Grupo Mateus](http://localhost:8080/swagger-ui.html)
 
-### 🔐 Configurações de Acesso ao Banco H2
+### 🗄️ H2 Database Console
+
+Este projeto utiliza o banco de dados H2 em memória, conforme solicitado nos requisitos técnicos, com acesso via console web para inspeção dos dados durante a execução da aplicação.
+
+🔗 Acesso ao Console
+
+Com a aplicação em execução, acesse no navegador:
+
+```bash
+http://localhost:8080/h2-console
+```
+
+🔐 Configurações de Acesso ao Banco H2
 Utilize os seguintes dados na tela de login do H2 Console:
 
 | Campo            | Valor                   |
